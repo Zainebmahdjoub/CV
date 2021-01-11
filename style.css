@@ -52,13 +52,80 @@ section
 {
     padding: 3rem 2rem;
 }
-.exp
+.container
 {
-    z-index: 999;
-   text-align: center;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
 }
-.exp ul li {
+.timeline
+{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.container ul li {
     list-style: none;
+    padding: 20px;
+    background-color: #1F1B1B;
+    color: #fff;
+    border-radius: 10px;
+margin-bottom: 20px;
+}
+.container ul li:last-child{
+    margin-bottom: 0;
+}
+.container ul li .info{
+    line-height: 2em;
+    margin-bottom: 1vh;
+}
+@media only screen and (min-width:768px){
+    .timeline:before{
+        content: "";
+        position: absolute;
+        background-color: var(--clr-red);
+        height: 90%;
+        width: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .container ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .container ul li:nth-child(odd){
+        float: right;
+        clear:left;
+        transform: translateX(30px);
+    }
+    .container ul li:nth-child(even){
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+    }
+    .timeline ul li::after{
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color:var(--clr-red);
+        border-radius: 50%;
+        top: 0;
+    }
+    .container ul li:nth-child(odd)::after{
+        left: 0;
+        left: -30px;
+        transform: translate(-50%,-50%);
+    }
+    .container ul li:nth-child(even)::after{
+        right: 0;
+        right: -30px;
+        transform: translate(50%,-50%);
+    }
 }
 
 header .name p
@@ -80,7 +147,8 @@ header .name h1
     color: var(--clr-white);
     width: 100%;
     margin: 0 auto ;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: var(--ff-oreg);
     font-weight:700 ;
 }
@@ -182,6 +250,8 @@ header .name h1
 {
     width: 100%;
     line-height: 2;
+    background-color: #fff;
+    color: #1F1B1B;
 }
 .about p 
  {

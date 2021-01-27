@@ -267,40 +267,52 @@ header .name h1
      font-family: var(--ff-oreg);
      font-weight:700 ;
  }
- footer
- {
-     width: 100%;
-     background-color: var(--clr-dark) ;
-     color: var(--clr-white);
-     line-height: 1;
-
- }
- footer ul 
- {
-    display: flex;
-    justify-content: center;
-     list-style: none;
- }
- footer  li 
- {
-display: flex;
- }
- footer ul i{
-     margin: 0 1vw;
-     padding:3vw 0;
-     
-     color: rgb(73, 73, 73);
- }
-footer ul i .fa-facebook-square:hover,.fa-facebook-square:active {
-color: #1d3f81;
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  line-height: 1;
 }
-footer ul i .fa-instagram-square:hover,.fa-instagram-square:active {
-   color: #bc2a8d;
-    }
-footer ul i .fa-google-plus-square:hover,.fa-google-plus-square:active {
-        color:  #DB4437;
-         }
-footer ul i .fa-linkedin:hover,.fa-linkedin:active {
-    color:#2867B2;
-     }
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer li {
+  display: flex;
+}
+footer ul i {
+  margin: 0 1vw;
+  padding: 3vw 0;
+  color: rgb(73, 73, 73);
+}
+footer ul i .fa-facebook-square:hover,
+.fa-facebook-square:active {
+  color: #1d3f81;
+}
+footer ul i .fa-instagram-square:hover,
+.fa-instagram-square:active {
+  color: #bc2a8d;
+}
+footer ul i .fa-google-plus-square:hover,
+.fa-google-plus-square:active {
+  color: #db4437;
+}
+footer ul i .fa-linkedin:hover,
+.fa-linkedin:active {
+  color: #2867b2;
+}
+.info {
+  padding-left: 2em;
+}
+.in {
+  padding-bottom: 2em;
+}
+.in h4 {
+  display: inline;
+  padding: 1em;
+}
+
  

@@ -258,7 +258,6 @@ header .name h1
 }
 .about p 
  {
-     text-align: center;
      padding: 0 50px;
      font-family: var(--ff-oreg);
  }
@@ -270,7 +269,7 @@ header .name h1
 footer {
   width: 100%;
   display: grid;
-  grid-template-rows: 4fr 2fr;
+  grid-template-rows: 2fr 1fr;
   background-color: var(--clr-dark);
   color: var(--clr-white);
   line-height: 1;
@@ -279,7 +278,7 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   list-style: none;
 }
 footer li {
@@ -308,14 +307,12 @@ footer ul i .fa-linkedin:hover,
 }
 .info h1 {
     padding:1em ;
-    text-align: center;
 }
 .info .item{
     padding: 1em;
     display: flex;
-    justify-content:center;
+    justify-content:flex-start;
 }
 .info i{
     padding-right: 1em;
 }
-

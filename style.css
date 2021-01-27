@@ -270,14 +270,16 @@ header .name h1
 footer {
   width: 100%;
   display: grid;
-  grid-template-columns: 3fr 3fr;
+  grid-template-columns: 5fr 5fr;
   background-color: var(--clr-dark);
   color: var(--clr-white);
   line-height: 1;
 }
 footer ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-end;
   list-style: none;
 }
 footer li {
@@ -304,15 +306,14 @@ footer ul i .fa-linkedin:hover,
 .fa-linkedin:active {
   color: #2867b2;
 }
-.info {
-  padding-left: 2em;
+.info h1 {
+    padding:1em ;
 }
-.in {
-  padding-bottom: 2em;
+.info .item{
+    padding: 1em;
+    display: flex;
 }
-.in h4 {
-  display: inline;
-  padding: 1em;
+.info i{
+    padding-right: 1em;
 }
 
- 

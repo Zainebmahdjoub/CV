@@ -270,7 +270,7 @@ header .name h1
 footer {
   width: 100%;
   display: grid;
-  grid-template-columns: 5fr 5fr;
+  grid-template-rows: 4fr 2fr;
   background-color: var(--clr-dark);
   color: var(--clr-white);
   line-height: 1;
@@ -279,7 +279,7 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   list-style: none;
 }
 footer li {
@@ -308,10 +308,12 @@ footer ul i .fa-linkedin:hover,
 }
 .info h1 {
     padding:1em ;
+    text-align: center;
 }
 .info .item{
     padding: 1em;
     display: flex;
+    justify-content:center;
 }
 .info i{
     padding-right: 1em;
